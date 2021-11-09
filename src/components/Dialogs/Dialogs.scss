@@ -1,0 +1,121 @@
+.dialogs {
+    height: 70vh;
+    width: 1000px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__messages {
+        width: 30%;
+
+        .active {
+            color: greenyellow;
+        }
+
+        &--item {
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        &--item + &--item {
+            border-top: 1px solid rgb(221, 221, 221);
+        }
+    }
+
+    &__line {
+        width: 1px;
+        height: 70vh;
+        background-color: rgb(201, 201, 201);
+        margin: 10px;
+    }
+
+    &__content {
+        max-height: 700px;
+        height: 650px;
+        overflow: auto;
+        
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        &--avatar {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 20px;
+
+            .avatar {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+
+        &--textarea {
+            height: 150px;
+            width: 400px;
+            background-color: rgb(236, 236, 236);
+            border-radius: 35px;
+            padding: 25px;
+            position: relative;
+
+            p {
+                text-align: center;
+                font-size: 17px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 23px;
+                left: -55px;
+                border: 20px solid transparent;
+                border-right: 40px solid rgb(236, 236, 236);
+            }
+        }
+
+        &--item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    }
+    &__textarea {
+        text-align: center;
+        display: flex;
+        &--text {
+            border: none;
+            height: 50px;
+            width: 470px;
+            background-color: rgb(236, 236, 236);
+            padding: 5px;
+        }
+
+        &--text:focus {
+            outline-color: rgb(40, 161, 161);
+        }
+
+        &--btn {
+            border: none;
+            border-left: 1px solid rgb(184, 184, 184);
+            height: 50px;
+            background-color: rgb(236, 236, 236);
+            cursor: pointer;
+        }
+    }
+}

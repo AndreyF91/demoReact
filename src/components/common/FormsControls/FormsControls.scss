@@ -1,0 +1,23 @@
+.form {
+    &__control {
+        position: relative;
+    }
+    &__error {
+        input {
+            border: 1px solid red;
+        }
+        span {
+            color: red;
+            position: absolute;
+            right: 0;
+            top: -25px;
+        }
+    }
+    &__summaryError {
+        border: 1px solid red;
+        padding: 2px;
+        color: red;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+}

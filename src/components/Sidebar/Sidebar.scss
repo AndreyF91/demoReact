@@ -1,0 +1,91 @@
+.sidebar {
+    background-color: rgb(40, 161, 161);
+    height: 300px;
+
+    &__wrapper {
+        width: 300px;
+        margin: 0 15px 50px 0;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        color: #fff;
+
+        span {
+            font-size: 23px;
+        }
+    }
+
+    &__list {
+
+        font-size: 25px;
+        padding: 20px 0 0 20px;
+
+        .active {
+            color: greenyellow;
+        }
+
+        li:last-child {
+            margin-top: 40px;
+        }
+
+        &--item {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        &--link {
+            color: #fff;
+        }
+    }
+
+    &__friends {
+
+        padding: 20px;
+        height: 260px;
+        background-color: cornflowerblue;
+        overflow: hidden;
+
+
+        &--line {
+            height: 1px;
+            width: 200px;
+            background: linear-gradient(90deg, #000, gray);
+            margin-bottom: 10px;
+        }
+
+        &--inner {
+            .people {
+                &__row {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    
+                }
+                &__cell {
+                    width: 70px;
+                    text-align: center;
+                    margin-bottom: 15px;
+
+                    &--img {
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        overflow: hidden;
+                        object-fit: cover;
+                        margin: 0 auto;
+                    }
+
+                    &--name {
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.items {
+    &__counter {
+        &--list {
+            justify-content: center;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        &--item {
+            padding: 2px 4px;            
+            cursor: pointer;
+        }
+
+        &--item + &--item {
+            margin-left: 2px;
+        }
+
+        &--selected {
+            font-weight: bold;
+            background-color: rgb(40, 161, 161);
+            color: #fff;
+            border-radius: 5px;
+        }
+        &--button {
+            color: #fff;
+            width: 70px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 5px;
+            background-color: rgb(40, 161, 161);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.header {
+    height: 110px;
+    background-color: rgb(40, 161, 161);
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &__logo {
+        width: 80px;
+        margin-left: 40px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__login {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 250px;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+        img {
+            
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    &__ava {
+        &--container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &--login {
+            width: 65px;
+            height: 65px;
+        }
+        &--logout {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+}
